@@ -1,0 +1,142 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "練習八.ipynb",
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Sunny-Pao/python/blob/master/%E7%B7%B4%E7%BF%92%E5%85%AB.ipynb_sunny\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "sNLclqeHOvbV",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "import numpy as np\n",
+        "import pandas as pd"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "xFZcIAPzO5c-",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "names = ['Adah', 'Sascha', 'Ellynn', 'Larissa', 'Ashia', 'Starr',\n",
+        "       'Anna-Diane', 'Trixy', 'Audrye', 'Evangelia', 'Willow', 'Lola',\n",
+        "       'Danyelle', 'Kylynn', 'Melli', 'Lilas', 'Yasmin', 'Celestina',\n",
+        "       'Cornie', 'Sophey', 'Robin', 'Allys', 'Ynes', 'Guinna', 'Ericha',\n",
+        "       'Violante', 'Issie', 'Alexina', 'Gussi', 'Lyndsay', 'Keslie',\n",
+        "       'Dania', 'Danell', 'Flori', 'Alexine', 'Wini', 'Liana', 'Andreana',\n",
+        "       'Lexis', 'Daile', 'Emilie', 'Rosalia', 'Tiena', 'Ceciley',\n",
+        "       'Clarabelle', 'Carola', 'Dedra', 'Berrie', 'Paolina', 'Dalia']"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "5Yy3Ho-FO88b",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "grades = np.random.randint(40, 101, (50, 4))"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "8c_kn7L1PWA8",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "df = pd.DataFrame(grades)"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "tD-1XRxGPfng",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "df.columns = ['國文','英文','理化','社會']"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "xqVC3HXdPo4P",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "df['姓名'] = names"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "xSWst0fgPw8l",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "df = df[['姓名','國文','英文','理化','社會']]"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "jNzlGbi0QC8D",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "#TODO:\n",
+        "# 1. 印出國文及格 (>=60) 的學生姓名\n",
+        "# 2. 印出英文不及格 (<60) 的學生姓名\n",
+        "# 3. 印出理化及格但社會不及格的學生姓名"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    }
+  ]
+}
